@@ -1,0 +1,170 @@
+%
+%    Autor: Simon Walker
+%			simon.walker@hsr.ch
+%
+%	 Dieses LaTeX Dokument benutzt eine Karteikartenklasse welche von Ronny Bergmann <mail@rbergmann.info> entwickelt wurde version 1.8b
+%	 Die Dokumentation und die Karteikartenklasse sind unter folgendem Link erhältlich
+%    https://github.com/kellertuer/Kartei
+
+%------------------------------------------------------------
+% Lernkarten zum Fach An2, Thema Integrale
+%------------------------------------------------------------
+
+\documentclass[a8paper,14pt,grid=none% %Grösse der Karteikarten auswählen (A5-A9)
+%,toc			%Komentarlöschen falls eine Zusammenstellung gewünscht wird
+,print			%Komentar löschen falls eine Ausdruckversion erstellt werden soll
+]{kartei}
+
+\usepackage[utf8]{inputenc} %UTF8
+\usepackage{hyperref}
+
+\usepackage{amsmath}
+
+\begin{document}
+	\setcardpagelayout
+	
+	\fach{An2}
+	\kommentar{Integral} %Thema
+  	
+	\begin{karte}{$ \int x^n dx $}
+	  	\begin{center}
+	  		$ \dfrac{x^{n+1}}{n+1} $
+	  	\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int \dfrac{dx}{x} $}
+		\begin{center}
+			$ ln|x| $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int e^x dx $}
+		\begin{center}
+			$ e^x $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int a^x dx $}
+		\begin{center}
+			$ \dfrac{a^x}{ln(a)} $
+		\end{center}
+	\end{karte}
+	
+	\begin{karte}{$ \int sin(x) dx $}
+		\begin{center}
+			$ -cos(x) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int cos(x) dx $}
+		\begin{center}
+			$ sin(x) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int tan(x) dx $}
+		\begin{center}
+			$ -ln|cos(x)| $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int cot(x) dx $}
+		\begin{center}
+			$ ln|sin(x)| $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int \dfrac{dx}{cos^2(x)} $}
+		\begin{center}
+			$ tan(x) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int \dfrac{dx}{sin^2(x)} $}
+		\begin{center}
+			$ -cot(x) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int sinh(x) dx $}
+		\begin{center}
+			$ cosh(x) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int cosh(x) dx $}
+		\begin{center}
+			$ sinh(x) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int tanh(x) dx $}
+		\begin{center}
+			$ ln|cosh(x)| $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int coth(x) dx $}
+		\begin{center}
+			$ ln|sinh(x)| $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int \dfrac{dx}{cosh^2(x)} $}
+		\begin{center}
+			$ tanh(x) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int \dfrac{dx}{sinh^2(x)} $}
+		\begin{center}
+			$ -coth(x) $
+		\end{center}
+	\end{karte}
+	
+	\begin{karte}{$ \int \dfrac{dx}{a^2+x^2} $}
+		\begin{center}
+			$ \dfrac{1}{a} arctan\left( \dfrac{x}{a} \right) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int \dfrac{dx}{a^2-x^2} $}
+		\begin{center}
+			$ \frac{1}{a} Artanh\left( \frac{x}{a} \right) $\\
+			$ = \frac{1}{2a}ln\left|\frac{a+x}{a-x}\right| $\\[10pt]
+			$ (|x|<a, a>0) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int \dfrac{dx}{x^2-a^2} $}
+		\begin{center}
+			$ -\frac{1}{a} Arcoth\left( \frac{x}{a} \right) $\\
+			$ = \frac{1}{2a}ln\left|\frac{x-a}{x+a}\right| $\\[10pt]
+			$ (|x|>a, a>0) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int \dfrac{dx}{\sqrt{a^2-x^2}} $}
+		\begin{center}
+			$ arcsin\left( \dfrac{x}{a} \right) $ \\[10pt]
+			$ (|x| < a, a > 0) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int \dfrac{dx}{\sqrt{a^2+x^2}} $}
+		\begin{center}
+			$ Arsinh\left( \frac{x}{a} \right) $\\
+			$ = ln\left|x+\sqrt{x^2+a^2}\right| $\\[10pt]
+			$ (a>0) $
+		\end{center}
+	\end{karte}
+
+	\begin{karte}{$ \int \dfrac{dx}{\sqrt{x^2-a^2}} $}
+		\begin{center}
+			$ Arcosh\left( \frac{x}{a} \right) $\\
+			$ =ln\left|x+\sqrt{x^2-a^2}\right| $\\[10pt]
+			$ (|x| > a, a>0) $
+		\end{center}
+	\end{karte}
+	
+\end{document}
