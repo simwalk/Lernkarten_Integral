@@ -1,6 +1,6 @@
 %
 %    Autor: Simon Walker
-%			simon.walker@hsr.ch
+%			simon.walker@ost.ch
 %
 %	 Dieses LaTeX Dokument benutzt eine Karteikartenklasse welche von Ronny Bergmann <mail@rbergmann.info> entwickelt wurde version 1.8b
 %	 Die Dokumentation und die Karteikartenklasse sind unter folgendem Link erhältlich
@@ -19,6 +19,11 @@
 \usepackage{hyperref}
 
 \usepackage{amsmath}
+
+\renewcommand{\fachstil}{\color{black}}
+\renewcommand{\kommentarstil}{\color{black}}
+\renewcommand{\antwortstil}{\color{black}}
+\renewcommand{\theCardID}{\color{black} \emph{\# \arabic{CardID}}}
 
 \begin{document}
 	\setcardpagelayout
